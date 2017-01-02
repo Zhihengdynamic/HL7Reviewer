@@ -1,7 +1,7 @@
 ﻿#ifndef QWAVESWIDGET_H
 #define QWAVESWIDGET_H
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 
 class QLabel;
 struct STUWaveform;

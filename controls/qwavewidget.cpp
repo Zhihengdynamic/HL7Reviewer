@@ -1,7 +1,7 @@
 #include "qwavewidget.h"
-#include <QGridLayout>
-#include <QLabel>
-#include <QLineEdit>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include "controls/RenderArea.h"
 #include "controls/waveformstructs.h"
 #include "config/ConfigManager.h"

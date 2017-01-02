@@ -1,7 +1,7 @@
 #ifndef HL7REVIEWER_H
 #define HL7REVIEWER_H
 
-#include <QtGui/QMainWindow>
+#include <QtWidgets/QMainWindow>
 #include "ui_hl7reviewer.h"
 
 class QSQLiteParser;
@@ -14,7 +14,7 @@ class HL7Reviewer : public QMainWindow
 	Q_OBJECT
 
 public:
-	HL7Reviewer(QWidget *parent = 0, Qt::WFlags flags = 0);
+	HL7Reviewer(QWidget *parent = 0, Qt::WindowFlags flags = 0);
 	~HL7Reviewer();
 
 	void OnInitDialog();

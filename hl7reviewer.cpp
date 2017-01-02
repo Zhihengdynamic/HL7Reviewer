@@ -1,10 +1,10 @@
 #include "hl7reviewer.h"
-#include <QVBoxLayout>
-#include <QLabel>
-#include <QActionGroup>
-#include <QMessageBox>
-#include <QFileDialog>
-#include <QScrollArea>
+#include <QtWidgets/QVBoxLayout>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QActionGroup>
+#include <QtWidgets/QMessageBox>
+#include <QtWidgets/QFileDialog>
+#include <QtWidgets/QScrollArea>
 #include <QFileInfo>
 #include "config/ConfigManager.h"
 #include "controls/qwaveswidget.h"
@@ -22,7 +22,7 @@ static const QString HL7_VIEWER               = QString("HL7 Viewer");
     @return  
 */
 
-HL7Reviewer::HL7Reviewer(QWidget *parent, Qt::WFlags flags)
+HL7Reviewer::HL7Reviewer(QWidget *parent, Qt::WindowFlags flags)
 	: QMainWindow(parent, flags)
 	, m_sqliteParserPtr(NULL)
 	, m_infoLabelPtr(NULL)
@@ -188,7 +188,7 @@ void HL7Reviewer::OnAboutClicked()
 	QMessageBox::about(this, tr("About HL7Viewer"),
 		tr("<h2>HL7Viewer 0.1.0</h2>"
 		"<p>Copyright &copy; 2016-2017 Mindray."
-		"<p>HL7Viewer is a small application that review hl7 message sent by Mindray eGateay Application."
+		"<p>HL7Viewer is a small application that parser and view hl7 message sent by Mindray eGateway Application."
 		"<p><h3>usage:</h3> "
 		"<ul>"
 		"<Li>'File | Open ', open directory</li>"

@@ -2,7 +2,7 @@
 #define RENDERAREA_H
 
 
-#include <QtGui/QFrame>
+#include <QtWidgets/QFrame>
 #include <QtGui/QPainterPath>
 class QPainter;
 

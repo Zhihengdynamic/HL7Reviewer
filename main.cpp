@@ -1,6 +1,7 @@
 #include "hl7reviewer.h"
-#include <QtGui/QApplication>
+#include <QtWidgets/QApplication>
 #include "config/ConfigManager.h"
+
 
 static const QString ORG_NAME      =  "Mindray";
 static const QString APP_NAME      =  "HL7Viewer";

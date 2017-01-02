@@ -1,6 +1,6 @@
 ﻿#include "qwaveswidget.h"
-#include <QGridLayout>
-#include <QLabel>
+#include <QtWidgets/QGridLayout>
+#include <QtWidgets/QLabel>
 #include "RenderArea.h"
 #include "scalecalculator.h"
 #include "config/ConfigManager.h"

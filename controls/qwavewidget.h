@@ -12,7 +12,7 @@ namespace psimpl
     class RenderArea;
 }
 
-#include <QWidget>
+#include <QtWidgets/QWidget>
 
 class QWaveWidget : public QWidget
 {
