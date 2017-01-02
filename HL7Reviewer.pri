@@ -7,8 +7,24 @@
 message("You are running qmake on a generated .pro file. This may not work!")
 
 
-HEADERS += ./hl7reviewer.h
+HEADERS += ./hl7reviewer.h \
+	./config/ConfigManager.h \
+	./config/ConfigID.h \
+	./controls/qwaveswidget.h \
+	./controls/qwavewidget.h \
+	./controls/RenderArea.h \
+	./controls/scalecalculator.h \
+	./controls/waveformstructs.h \
+	./mode/qsqliteparser.h \
+	
 SOURCES += ./main.cpp \
-    ./hl7reviewer.cpp
-FORMS += ./hl7reviewer.ui
-RESOURCES += hl7reviewer.qrc
+    ./hl7reviewer.cpp \
+	./config/ConfigManager.cpp \
+	./controls/qwaveswidget.cpp \
+	./controls/qwavewidget.cpp \
+	./controls/RenderArea.cpp \
+	./controls/scalecalculator.cpp \
+	./mode/qsqliteparser.cpp \
+	
+FORMS += ./resource/hl7reviewer.ui
+RESOURCES += ./resource/hl7reviewer.qrc \

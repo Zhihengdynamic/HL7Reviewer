@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HL7ReviewerClass</class>
+ <widget class="QMainWindow" name="HL7ReviewerClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>HL7Reviewer</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionOpenDatabaseDir"/>
+    <addaction name="actionOpenHL7LogDir"/>
+    <addaction name="actionOpenCISLog"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuH_elp">
+    <property name="title">
+     <string>H&amp;elp</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuH_elp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionOpenDatabaseDir">
+   <property name="icon">
+    <iconset resource="hl7reviewer.qrc">
+     <normaloff>:/HL7Reviewer/view_database.png</normaloff>:/HL7Reviewer/view_database.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenDatabaseDir</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Q&amp;uit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="icon">
+    <iconset resource="hl7reviewer.qrc">
+     <normaloff>:/HL7Reviewer/info.png</normaloff>:/HL7Reviewer/info.png</iconset>
+   </property>
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionOpenHL7LogDir">
+   <property name="icon">
+    <iconset resource="hl7reviewer.qrc">
+     <normaloff>:/HL7Reviewer/lock_dir.png</normaloff>:/HL7Reviewer/lock_dir.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenHL7LogDir</string>
+   </property>
+  </action>
+  <action name="actionOpenCISLog">
+   <property name="icon">
+    <iconset resource="hl7reviewer.qrc">
+     <normaloff>:/HL7Reviewer/cis_log.png</normaloff>:/HL7Reviewer/cis_log.png</iconset>
+   </property>
+   <property name="text">
+    <string>OpenCISLog</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="hl7reviewer.qrc"/>
+ </resources>
+ <connections/>
+</ui>

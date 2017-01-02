@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/HL7Reviewer">
+        <file>cis_log.png</file>
+        <file>info.png</file>
+        <file>lock_dir.png</file>
+        <file>view_database.png</file>
+        <file>setting.png</file>
+        <file>app.png</file>
+    </qresource>
+</RCC>
